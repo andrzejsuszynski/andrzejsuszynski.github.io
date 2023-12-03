@@ -1,0 +1,14 @@
+Andrzej Suszyński:
+  name        : "Andrzej Suszyński"
+  bio         : ""
+  avatar      : "/assets/images/as.jpg"
+  links:
+    - label: "Website"
+      icon: "fas fa-fw fa-link"
+      url: "https://suszynski.tech"
+    - label: "Twitter"
+      icon: "fab fa-fw fa-twitter-square"
+      url: "https://twitter.com/@ndrzejsuszynski"
+    - label: "LinkedIn"
+      icon: "fab fa-fw fa-linkedin-square"
+      url: "https://twitter.com/@ndrzejsuszynski"

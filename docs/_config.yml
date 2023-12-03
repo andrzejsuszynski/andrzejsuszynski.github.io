@@ -26,7 +26,8 @@ url: "https://suszynski.tech" # the base hostname & protocol for your site, e.g.
 twitter_username: "@ndrzejsuszynski"
 github_username:  andrzejsuszynski
 domain: suszynski.tech
-
+author:
+  name: Andrzej Suszyński
 # Build settings
 theme: minimal-mistakes-jekyll
 #theme: minima
@@ -85,6 +86,22 @@ defaults:
       share: true
       related: true
 
+
+
+# Collections
+collections:
+  docs:
+    output: true
+    permalink: /:collection/:path/
+  recipes:
+    output: true
+    permalink: /:collection/:path/
+  pets:
+    output: true
+    permalink: /:collection/:path/
+  portfolio:
+    output: true
+    permalink: /:collection/:path/
 
 
 
