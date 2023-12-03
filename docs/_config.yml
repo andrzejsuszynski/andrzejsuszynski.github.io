@@ -20,19 +20,21 @@
 
 title: Andrzej Suszyński
 email: 
-description: >- # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
+description: ""#>- # this means to ignore newlines until "baseurl:"
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://suszynski.tech" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: "@ndrzejsuszynski"
 github_username:  andrzejsuszynski
+domain: suszynski.tech
 
 # Build settings
-theme: minima
+theme: minimal-mistakes-jekyll
+#theme: minima
 plugins:
   - jekyll-feed
+
+
+include: ["_pages"]
 
 # Exclude from processing.
 # The following items will not be processed, by default.
@@ -55,7 +57,34 @@ plugins:
 #   - vendor/ruby/
 
 
-domain: suszynski.tech       # if you want to force HTTPS, specify the domain without the http at the start, e.g. example.com
-url: https://suszynski.tech  # the base hostname and protocol for your site, e.g. http://example.com
-#baseurl: /REPOSITORY-NAME/      # place folder name if the site is served in a subfolder
+
+#miminal mistake theme https://mmistakes.github.io/minimal-mistakes
+minimal_mistakes_skin: "dark" #"default" ,"air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
+head_scripts:
+  - https://code.jquery.com/jquery-3.2.1.min.js
+breadcrumbs: false  # disabled by default
+
+
+defaults:
+  # _pages
+  - scope:
+      path: ""
+      type: pages
+    values:
+      layout: single
+      author_profile: true
+  # _posts
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: single
+      author_profile: true
+      read_time: true
+      comments: true
+      share: true
+      related: true
+
+
+
 
